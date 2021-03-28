@@ -24,12 +24,24 @@ This is specific for querying all of the information for a user on Xbox Live. If
 
 All you need is the path of your `_secret.json` and an API_KEY from the website above and you are good to go!
 
+## Output
+A folder will be created in your current working directory (soon to change in release 0.0.1) based off of each Username inside your `_secret.json` file. This folder will contain
+3 files:
+- `basic_<USERNAME>.json`
+- `history_<USERNAME>.json`
+- `origin_player_<USERNAME>.json`
+
+Someone with free access will only be able to extract data from `basic_<USERNAME>.json` where someone with Support or Legend status will be able to access all of the files.
+
 # Releases
 ## 0.0.0 (Current)
 Everything that was mentioned above in the `README.md`.
 
 ## 0.0.1
-Interface to continually look at your stats in realtime in the form of a dashboard.
+Add easier path manipulations for storing User's files in specific locations.
 
 ## 0.0.2
+Interface to continually look at your stats in realtime in the form of a dashboard.
+
+## 0.0.3
 For users that have Supporter or Legend status, create a dashboard that analyzes the data over time to establish current game lobby level and stat trends over time. 
