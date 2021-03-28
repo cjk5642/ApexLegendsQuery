@@ -46,7 +46,7 @@ class Apex:
         self.to_json(origin_player, os.path.join(player_path, f'origin_player_{self.PLAYER}'))
 
 if __name__ == '__main__':
-    path = os.path.abspath(str(input("Please input path of your _secret.json.")))
+    path = os.path.abspath(str(input("Please input path of your _secret.json.\t")))
     API_KEY, PLAYERS, PLATFORMS, ACTIONS = get_info(path)
     if type(PLAYERS) == list:
         for PLAYER, PLATFORM, ACTION in zip(PLAYERS, PLATFORMS, ACTIONS):
